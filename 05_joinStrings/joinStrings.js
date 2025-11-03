@@ -7,13 +7,24 @@
  The greeting should read: "Hello! My name is Carlos Stevenson and I am 18 years old."
 */
 
+// const { firstName, lastName, thisYear, birthYear, greeting } = require("./joinStrings-example")
+
 // Add your code right below, good luck!
+const firstName = "Carlos";
+const lastName = "Stevenson";
+const birthYear = 1947;
+const thisYear = 1965;
+
+fullName = (firstName + " " + lastName)
+age = ( thisYear - birthYear)
+
+
+const greeting = "Hello! My name is " + fullName + " and I am " + age + " years old.";
+console.log(greeting);
 
 
 
-
-
-// Do not change this
+// Do not change 
 module.exports = {
   firstName: typeof firstName === 'undefined' ? undefined : firstName,
   lastName: typeof lastName === 'undefined' ? undefined : lastName,
